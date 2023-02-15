@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CC35275C299D0B8F00B1F373 /* HeaderHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35275B299D0B8F00B1F373 /* HeaderHeroView.swift */; };
+		CC35275E299D15C300B1F373 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35275D299D15C300B1F373 /* HomeView.swift */; };
+		CC352760299D164A00B1F373 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35275F299D164A00B1F373 /* MenuView.swift */; };
+		CC352762299D29A300B1F373 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC352761299D29A300B1F373 /* UserProfileView.swift */; };
 		CC4D8841299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D8840299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift */; };
 		CC4D8845299BDB7300DB6D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D8844299BDB7300DB6D26 /* Assets.xcassets */; };
 		CC4D8848299BDB7300DB6D26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D8847299BDB7300DB6D26 /* Preview Assets.xcassets */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		CC35275B299D0B8F00B1F373 /* HeaderHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHeroView.swift; sourceTree = "<group>"; };
+		CC35275D299D15C300B1F373 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CC35275F299D164A00B1F373 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CC352761299D29A300B1F373 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		CC4D883D299BDB7100DB6D26 /* LittleLemonRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemonRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D8840299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonRestaurantApp.swift; sourceTree = "<group>"; };
 		CC4D8844299BDB7300DB6D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 			children = (
 				CC4D8840299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift */,
 				CC4D8858299C555000DB6D26 /* OnboardingView.swift */,
+				CC35275D299D15C300B1F373 /* HomeView.swift */,
+				CC352761299D29A300B1F373 /* UserProfileView.swift */,
+				CC35275F299D164A00B1F373 /* MenuView.swift */,
 				CC35275B299D0B8F00B1F373 /* HeaderHeroView.swift */,
 				CC4D8844299BDB7300DB6D26 /* Assets.xcassets */,
 				CC4D8851299C432800DB6D26 /* Info.plist */,
@@ -158,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC352760299D164A00B1F373 /* MenuView.swift in Sources */,
+				CC352762299D29A300B1F373 /* UserProfileView.swift in Sources */,
 				CC4D8859299C555000DB6D26 /* OnboardingView.swift in Sources */,
+				CC35275E299D15C300B1F373 /* HomeView.swift in Sources */,
 				CC4D8841299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift in Sources */,
 				CC35275C299D0B8F00B1F373 /* HeaderHeroView.swift in Sources */,
 			);
@@ -293,6 +305,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittleLemonRestaurant/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Little Lemon";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +336,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittleLemonRestaurant/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Little Lemon";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

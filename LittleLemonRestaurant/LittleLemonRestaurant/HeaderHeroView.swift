@@ -30,7 +30,7 @@ struct HeaderHeroView: View {
                             .padding(.bottom, 10)
                             .foregroundColor(Color("HighlightGray"))
                         Text("We are a family owned Mediterranean, restuarant, focused on trditional recipes served with a modern twist.")
-                            .font(Font.custom("Karla-Medium", size: 18))
+                            .font(Font.custom("Karla-Regular_Medium", size: 18))
                             .foregroundColor(Color("HighlightGray"))
                             .multilineTextAlignment(.leading)
                     }
