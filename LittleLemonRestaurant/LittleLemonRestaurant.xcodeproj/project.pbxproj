@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CC4D8841299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D8840299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift */; };
-		CC4D8843299BDB7100DB6D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D8842299BDB7100DB6D26 /* ContentView.swift */; };
 		CC4D8845299BDB7300DB6D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D8844299BDB7300DB6D26 /* Assets.xcassets */; };
 		CC4D8848299BDB7300DB6D26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D8847299BDB7300DB6D26 /* Preview Assets.xcassets */; };
+		CC4D8850299C423200DB6D26 /* MarkaziText.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4D884F299C423200DB6D26 /* MarkaziText.ttf */; };
+		CC4D8857299C530700DB6D26 /* Karla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC4D8856299C530700DB6D26 /* Karla.ttf */; };
+		CC4D8859299C555000DB6D26 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D8858299C555000DB6D26 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC4D883D299BDB7100DB6D26 /* LittleLemonRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemonRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D8840299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonRestaurantApp.swift; sourceTree = "<group>"; };
-		CC4D8842299BDB7100DB6D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC4D8844299BDB7300DB6D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4D8847299BDB7300DB6D26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC4D884F299C423200DB6D26 /* MarkaziText.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkaziText.ttf; sourceTree = "<group>"; };
+		CC4D8851299C432800DB6D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4D8856299C530700DB6D26 /* Karla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Karla.ttf; sourceTree = "<group>"; };
+		CC4D8858299C555000DB6D26 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				CC4D8840299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift */,
-				CC4D8842299BDB7100DB6D26 /* ContentView.swift */,
+				CC4D8858299C555000DB6D26 /* OnboardingView.swift */,
 				CC4D8844299BDB7300DB6D26 /* Assets.xcassets */,
+				CC4D8851299C432800DB6D26 /* Info.plist */,
+				CC4D884E299C41D000DB6D26 /* CustomFonts */,
 				CC4D8846299BDB7300DB6D26 /* Preview Content */,
 			);
 			path = LittleLemonRestaurant;
@@ -65,6 +72,15 @@
 				CC4D8847299BDB7300DB6D26 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC4D884E299C41D000DB6D26 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC4D884F299C423200DB6D26 /* MarkaziText.ttf */,
+				CC4D8856299C530700DB6D26 /* Karla.ttf */,
+			);
+			path = CustomFonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4D8857299C530700DB6D26 /* Karla.ttf in Resources */,
 				CC4D8848299BDB7300DB6D26 /* Preview Assets.xcassets in Resources */,
+				CC4D8850299C423200DB6D26 /* MarkaziText.ttf in Resources */,
 				CC4D8845299BDB7300DB6D26 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4D8843299BDB7100DB6D26 /* ContentView.swift in Sources */,
+				CC4D8859299C555000DB6D26 /* OnboardingView.swift in Sources */,
 				CC4D8841299BDB7100DB6D26 /* LittleLemonRestaurantApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +288,7 @@
 				DEVELOPMENT_TEAM = 5ZQV4NQY6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemonRestaurant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +318,7 @@
 				DEVELOPMENT_TEAM = 5ZQV4NQY6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemonRestaurant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
