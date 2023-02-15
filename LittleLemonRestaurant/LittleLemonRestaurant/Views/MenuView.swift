@@ -16,8 +16,14 @@ struct MenuView: View {
         VStack {
             HeaderHeroView()
             
-            List {
-               
+            FetchedObjects() { (dishes: [Dish]) in
+                List {
+                    ForEach(dishes, id:\.self) { dish in
+                        HStack {
+                            
+                        }
+                    }
+                }
             }
             
         }
@@ -26,6 +32,7 @@ struct MenuView: View {
     }
     
     func getMenuData() {
+        PersistenceController.shared.clear()
         let menuItemAddress = "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json"
         let menuUrl = URL(string: menuItemAddress)!
         let request = URLRequest(url: menuUrl)
@@ -33,9 +40,16 @@ struct MenuView: View {
             if let data = data {
                 let decoder = JSONDecoder()
                 let menu = try? decoder.decode(MenuList.self, from: data)
-                menu?.menu.forEach {_ in
-                    
+                
+                ForEach(menu)
+                
+                menu?.menu.forEach { _ in
+                    let dish = Dish(context: viewContext)
+                    dish.title = dish.title
+                    dish.price = dish.price
+                    dish.image = dish.image
                 }
+                try? viewContext.save()
             }
         }
         task.resume()
