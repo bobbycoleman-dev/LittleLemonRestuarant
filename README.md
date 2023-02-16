@@ -30,4 +30,13 @@ let task = URLSession.shared.dataTask(with: request) {data,_,_ in
 ```
 This really got me for a couple hours until I had a complete "Ah HA!" moment.
 
-![alt text]()
+
+### Home Screen Wireframe
+Here is my wireframe for my home screen. I just followed the directions on this one but made some different choices on the final product
+
+<img src="https://github.com/bobbycoleman-dev/LittleLemonRestuarant/blob/main/HomeViewWireframe.png" width=25% height=25%>
+
+### App Functionality
+For the overall functionality of the app, I followed the instructions and did a little extra, but not oo much. The onboarding screen works as indended, the home screen has the hero header, scroll list of product categories, and a list of all the available foods in the JSON data. I also added a NavigationLink to the item description which is just a blown up version of the list item. I also noticed that their UX/UI designs (probably made in Figma) was not how the directions took us, like the ability to edit the profile. I might go back and add that functionality at some point.
+
+Hope you enjoy!
