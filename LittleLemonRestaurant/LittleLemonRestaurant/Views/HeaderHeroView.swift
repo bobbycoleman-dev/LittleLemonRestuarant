@@ -27,7 +27,6 @@ struct HeaderHeroView: View {
                     VStack(alignment: .leading) {
                         Text("Chicago")
                             .font(Font.custom("MarkaziText-SemiBold", size: 45, relativeTo: .title))
-                            .padding(.bottom, 10)
                             .foregroundColor(Color("HighlightGray"))
                         Text("We are a family owned Mediterranean, restuarant, focused on trditional recipes served with a modern twist.")
                             .font(Font.custom("Karla-Regular_Medium", size: 18))
@@ -39,7 +38,7 @@ struct HeaderHeroView: View {
                         .scaledToFill()
                         .frame(width: 150, height: 175)
                         .cornerRadius(10)
-                        .padding(.top, 15)
+//                        .padding(.top, 15)
                 }
             }
             .padding()

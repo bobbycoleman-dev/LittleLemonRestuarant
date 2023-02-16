@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
     let persistenceController = PersistenceController.shared
     
     var body: some View {
@@ -27,9 +28,11 @@ struct HomeView: View {
                     Text("Profile")
                     Image(systemName: "square.and.pencil")
                 }
+                
             
         }
         .navigationBarBackButtonHidden(true)
+        .accentColor(colorScheme == .dark ? Color("PrimaryYellow") : Color("PrimaryGreen"))
         
     }
 }
